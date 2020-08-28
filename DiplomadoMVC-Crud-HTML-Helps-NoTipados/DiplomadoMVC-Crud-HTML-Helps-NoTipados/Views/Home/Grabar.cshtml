@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Grabar Registro</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Home/Grabar">
+            <h1>Registro de Producto</h1>
+            <table class="auto-style1">
+                <tr>
+                    <td>Descripcion</td>
+                    <td>
+                        <input type="text" name="descripcion" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>
+                        <input type="text" name="precio" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"></td>
+                    <td>
+                        <input type="submit" name="Confirmar" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

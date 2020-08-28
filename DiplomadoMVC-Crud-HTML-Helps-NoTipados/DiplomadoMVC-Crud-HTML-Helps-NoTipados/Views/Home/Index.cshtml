@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @{ Html.BeginForm(); }
+        <p>
+            Buscar por Código:
+            @Html.TextBox("Codigo")
+        </p>
+        <p>
+            <input type="submit" value="Buscar" />
+        </p>
+        @{ Html.EndForm(); }
+    </div>
+    <div class="row" style="text-align:right; padding:5px">
+        <a href="/Home/Grabar" class="btn btn-dufault">Agregar</a>
+    </div>
+</body>
+</html>
